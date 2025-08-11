@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0D1116;
     --foreground: #ededed;
   }
 }
@@ -22,5 +22,61 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Mono", monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: #3b82f6;
+  transition: color 0.3s ease;
+}
+
+/*DARK MODE*/
+
+.dark body {
+  background: #0D1116;
+  color: #e2e8f0;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #CBA6F7; /* mocha mauve */
+}
+
+.dark p {
+  color: #CBA6F7;
+}
+
+.dark ::selection {
+  background-color:  color-mix(in srgb, #0D1116 50%, #f5e0dc 50%); /* mix of bg + latte rosewater */
+  color: #f5e0dc; /* mocha rosewater */
+}
+
+/*LIGHT MODE*/
+
+body {
+  background: #fffff9; 
+  color: #1e293b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #181825; /* mocha mantle */
+}
+
+p {
+  color: #7f849c;  /* mocha overlay1 */
+}
+
+::selection {
+  background-color:  color-mix(in srgb, #fffff9 50%, #f2cdcd 50%); /* bg + mocha flamingo */
+  color: #45475a; /* mocha surface 1 */
+}
+
+.theme-toggle-button {
+  background: rgba(245, 245, 220, 0.8); 
+  border: 1px solid #d1d5db; 
+}
+
+.dark .theme-toggle-button {
+  background: rgba(13, 17, 22, 0.8); 
+  border: 1px solid #4b5563; 
 }

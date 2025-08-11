@@ -1,8 +1,31 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam ultrices, auctor velit at, ullamcorper mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas nisi nunc, imperdiet at elit ut, ornare laoreet lectus. Curabitur pretium, dolor nec elementum vehicula, felis nulla eleifend ligula, nec tincidunt leo neque a lacus. Proin condimentum dignissim bibendum. Duis dignissim ex in nisl sodales imperdiet. Vestibulum tempus orci eu condimentum tristique. Duis ultrices nisl risus, ac malesuada justo auctor quis. Nulla consequat, justo a pellentesque pellentesque, erat diam pellentesque mi, in viverra felis est id dui. Cras elit ante, molestie et urna aliquam, tincidunt rutrum nisl. Fusce eget bibendum felis. Fusce id iaculis mi. Nunc id orci suscipit, malesuada sapien id, venenatis leo. Nullam nec vestibulum nulla.
+    // fix for when user is on mobile/sm screen
+    <main className="mx-auto mt-[100px] max-w-[600px] grid gap-y-12 px-4">
+      
+      <section className="grid md:grid-cols-12 gap-12 items-start">
+
+        <div className="col-span-4">
+          <Image
+            src="/placeholder.png"
+            alt="Placeholder"
+            width={400}
+            height={400}
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div className="col-span-8">
+          <h1 className='font-bold text-3xl'>Eric Chen</h1>
+          <p className='mt-2'>IBDP @ Milliken Mills HS</p>
+          <p className='mt-4 text-[#CBA6F7]'>hey 👋 my name is eric</p>
+        </div>
+        
+      </section>
+
+      <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam ultrices, auctor velit at, ullamcorper mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas nisi nunc, imperdiet at elit ut, ornare laoreet lectus. Curabitur pretium, dolor nec elementum vehicula, felis nulla eleifend ligula, nec tincidunt leo neque a lacus. Proin condimentum dignissim bibendum. Duis dignissim ex in nisl sodales imperdiet. Vestibulum tempus orci eu condimentum tristique. Duis ultrices nisl risus, ac malesuada justo auctor quis. Nulla consequat, justo a pellentesque pellentesque, erat diam pellentesque mi, in viverra felis est id dui. Cras elit ante, molestie et urna aliquam, tincidunt rutrum nisl. Fusce eget bibendum felis. Fusce id iaculis mi. Nunc id orci suscipit, malesuada sapien id, venenatis leo. Nullam nec vestibulum nulla.
 
       Sed scelerisque non velit id tincidunt. Mauris vitae tempor dui. Proin auctor mi id fermentum dapibus. Fusce suscipit, dui at malesuada ornare, sapien tortor iaculis nulla, tempus ultricies metus felis ut nulla. Sed aliquet, dui non convallis vestibulum, dui elit facilisis odio, a condimentum erat velit id neque. Maecenas volutpat pulvinar libero a ultrices. Nam tempus consequat neque eget tincidunt. Morbi mauris orci, vehicula nec efficitur a, mollis id libero. Nulla placerat imperdiet posuere. Morbi nisi sapien, ullamcorper quis ligula a, mattis varius risus. Etiam imperdiet diam nisi, sed hendrerit dui scelerisque eu. Duis arcu nibh, feugiat eget iaculis eget, tincidunt sed erat.
 
@@ -13,5 +36,8 @@ export default function Home() {
       Praesent at lectus eleifend, ullamcorper mi a, volutpat ante. In sit amet bibendum enim, eget ullamcorper augue. Aenean elementum, felis nec imperdiet dictum, metus orci lacinia tellus, eu vulputate ex diam quis nisl. Etiam ut rutrum felis. Mauris dictum auctor nulla vitae rhoncus. Aliquam ullamcorper, eros sit amet malesuada elementum, massa leo placerat felis, sed luctus leo metus aliquet enim. Suspendisse potenti. Ut condimentum ut ipsum id condimentum. Integer iaculis dolor eget ligula rutrum accumsan.
 
       </p>
+
+
+    </main>
   );
 }
