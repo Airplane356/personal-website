@@ -1,4 +1,7 @@
+import { Instrument_Sans } from 'next/font/google';
 import Image from 'next/image';
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
 
 export default function Home() {
   return (
@@ -7,7 +10,7 @@ export default function Home() {
       
       <section className="grid md:grid-cols-12 gap-12 items-start">
 
-        <div className="col-span-4">
+        <div className="col-span-5">
           <Image
             src="/placeholder.png"
             alt="Placeholder"
@@ -15,15 +18,72 @@ export default function Home() {
             height={400}
             className="rounded-lg shadow-lg"
           />
+          
+          <div className='flex justify-between mt-5 justify-content'>
+            <a  
+                href="https://github.com/Airplane356"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="GitHub"
+            >
+             <FaGithub className='social-icon-colour' size={25}/> 
+            </a>
+
+            <a
+              href=''
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin className='social-icon-colour' size={25}/>
+            </a>
+
+            <a
+              href=''
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="X Twitter"
+            >
+              <FaXTwitter className='social-icon-colour' size={25}/>
+            </a>
+
+            <a
+              href=''
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram className='social-icon-colour' size={25}/>
+            </a>
+
+            <a
+              href=''
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Mail"
+            >
+              <MdEmail className='social-icon-colour' size={25}/>
+            </a>
+
+
+          </div>
+
         </div>
 
-        <div className="col-span-8">
+        <div className="col-span-7">
           <h1 className='font-bold text-3xl'>Eric Chen</h1>
           <p className='mt-2'>IBDP @ Milliken Mills HS</p>
           <p className='mt-4 text-[#CBA6F7]'>hey 👋 my name is eric</p>
         </div>
         
       </section>
+
+      <hr></hr>
 
       <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam ultrices, auctor velit at, ullamcorper mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas nisi nunc, imperdiet at elit ut, ornare laoreet lectus. Curabitur pretium, dolor nec elementum vehicula, felis nulla eleifend ligula, nec tincidunt leo neque a lacus. Proin condimentum dignissim bibendum. Duis dignissim ex in nisl sodales imperdiet. Vestibulum tempus orci eu condimentum tristique. Duis ultrices nisl risus, ac malesuada justo auctor quis. Nulla consequat, justo a pellentesque pellentesque, erat diam pellentesque mi, in viverra felis est id dui. Cras elit ante, molestie et urna aliquam, tincidunt rutrum nisl. Fusce eget bibendum felis. Fusce id iaculis mi. Nunc id orci suscipit, malesuada sapien id, venenatis leo. Nullam nec vestibulum nulla.
 

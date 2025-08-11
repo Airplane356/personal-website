@@ -80,3 +80,11 @@ p {
   background: rgba(13, 17, 22, 0.8); 
   border: 1px solid #4b5563; 
 }
+
+.dark .social-icon-colour {
+  color: #CBA6F7;  /* mocha mauve */
+}
+
+.social-icon-colour {
+  color: #ef9f76; /* frappe peach */
+}
