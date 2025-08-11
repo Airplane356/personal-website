@@ -6,7 +6,7 @@ import { MdEmail } from 'react-icons/md';
 export default function Home() {
   return (
     // fix for when user is on mobile/sm screen
-    <main className="mx-auto mt-[100px] max-w-[600px] grid gap-y-12 px-4">
+    <main className="mx-auto mt-[40px] max-w-[600px] grid gap-y-12 px-4">
       
       <section className="grid md:grid-cols-12 gap-12 items-start">
 

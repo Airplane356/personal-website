@@ -72,13 +72,19 @@ p {
 }
 
 .theme-toggle-button {
-  background: rgba(245, 245, 220, 0.8); 
-  border: 1px solid #d1d5db; 
+  background: rgba(255, 255, 249, 0.1); 
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .dark .theme-toggle-button {
-  background: rgba(13, 17, 22, 0.8); 
-  border: 1px solid #4b5563; 
+  background: rgba(13, 17, 22, 0.1); 
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .dark .social-icon-colour {
@@ -86,5 +92,13 @@ p {
 }
 
 .social-icon-colour {
-  color: #ef9f76; /* frappe peach */
+  color: #f38ba8; /* mocha red */
+}
+
+.dark .nav-text-colour {
+  color: #89b4fa /* mocha blue */
+}
+
+.nav-text-colour {
+  color: #f38ba8 /* mocha red */
 }
