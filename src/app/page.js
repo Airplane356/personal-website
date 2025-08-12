@@ -2,11 +2,12 @@ import { Instrument_Sans } from 'next/font/google';
 import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
+import SkillsTag from '@/components/SkillsTag';
 
 export default function Home() {
   return (
     // fix for when user is on mobile/sm screen
-    <main className="mx-auto mt-[40px] max-w-[600px] grid gap-y-12 px-4">
+    <main className="mx-auto mt-[40px] max-w-[800px] grid gap-y-12 px-4">
       
       <section className="grid md:grid-cols-12 gap-12 items-start">
 
@@ -19,7 +20,7 @@ export default function Home() {
             className="rounded-lg shadow-lg"
           />
           
-          <div className='flex justify-between mt-5 justify-content'>
+          <div className='flex justify-between mt-5'>
             <a  
                 href="https://github.com/Airplane356"
                 target="_blank"
@@ -78,12 +79,38 @@ export default function Home() {
         <div className="col-span-7">
           <h1 className='font-bold text-3xl'>Eric Chen</h1>
           <p className='mt-2'>IBDP @ Milliken Mills HS</p>
-          <p className='mt-4 text-[#CBA6F7]'>hey 👋 my name is eric</p>
+          <p className='mt-4'>hey 👋 my name is eric</p>
+          <ul>
+            <li className='list-disc ml-8'>Interested in building cool things with real-world impact 🚀</li>
+            <li className='list-disc ml-8'>Not interested in bean sprouts</li>
+            <li className='list-disc ml-8'>Manifesting to get into university</li>
+          </ul>
         </div>
         
       </section>
 
       <hr></hr>
+
+      <div className='grid grid-rows-2 gap-12'>
+        <div className='flex flex-wrap border-[1px] rounded-md skills-container'>
+          <SkillsTag title={"Python"}/>
+          <SkillsTag title={"Java"}/>
+          <SkillsTag title={"C++"}/>
+          <SkillsTag title={"JavaScript"}/>
+          <SkillsTag title={"TypeScript"}/>
+          <SkillsTag title={"React.js"}/>
+          <SkillsTag title={"Next.js"}/>
+          <SkillsTag title={"Node.js"}/>
+          <SkillsTag title={"REST api"}/>
+          <SkillsTag title={"MongoDB"}/>
+          <SkillsTag title={"SQL"}/>
+          <SkillsTag title={"NumPy"}/>
+          <SkillsTag title={"Matplotlib"}/>
+          <SkillsTag title={"Scikit-Learn"}/>
+          <SkillsTag title={"Git"}/>
+
+        </div>
+      </div>
 
       <p className="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam ultrices, auctor velit at, ullamcorper mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas nisi nunc, imperdiet at elit ut, ornare laoreet lectus. Curabitur pretium, dolor nec elementum vehicula, felis nulla eleifend ligula, nec tincidunt leo neque a lacus. Proin condimentum dignissim bibendum. Duis dignissim ex in nisl sodales imperdiet. Vestibulum tempus orci eu condimentum tristique. Duis ultrices nisl risus, ac malesuada justo auctor quis. Nulla consequat, justo a pellentesque pellentesque, erat diam pellentesque mi, in viverra felis est id dui. Cras elit ante, molestie et urna aliquam, tincidunt rutrum nisl. Fusce eget bibendum felis. Fusce id iaculis mi. Nunc id orci suscipit, malesuada sapien id, venenatis leo. Nullam nec vestibulum nulla.
 
