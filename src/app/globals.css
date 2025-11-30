@@ -71,7 +71,7 @@ a {
   color: #89b4fa /* mocha blue */
 }
 
-.dark .skills-container {
+.dark .container {
   border-color: #1e1e2e; /* mocha base */
   background-color: #11111b; /* mocha crust */
   transition: all 0.3s ease;
@@ -122,7 +122,7 @@ li {
   color: #df8e1d; /* latte yellow */
 }
 
-.skills-container {
+.container {
   border-color: #f5e0dc; /* mocha rosewater */
   background-color: #fffff9;
   transition: all 0.3s ease;

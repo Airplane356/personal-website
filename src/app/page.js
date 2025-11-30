@@ -56,16 +56,6 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
-              aria-label="Instagram"
-            >
-              <FaInstagram className='social-icon-colour' size={25}/>
-            </a>
-
-            <a
-              href=''
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
               aria-label="Mail"
             >
               <MdEmail className='social-icon-colour' size={25}/>
@@ -92,7 +82,7 @@ export default function Home() {
       <hr></hr>
 
       <div className='grid grid-rows-2 gap-12'>
-        <div className='flex flex-wrap border-[1px] rounded-md skills-container'>
+        <div className='flex flex-wrap border-[1px] rounded-md container'>
           <SkillsTag title={"Python"}/>
           <SkillsTag title={"Java"}/>
           <SkillsTag title={"C++"}/>
