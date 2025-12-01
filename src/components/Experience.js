@@ -7,10 +7,10 @@ export default function ExperienceCard({
     role,
     dates,
     bullets = [],
-    padding = "p=0"
+    padding = ""
 }) {
   return (
-    <div className="container border-[1px] w-full mx-auto rounded-2xl p-6 mt-[20px] font-mono text-[#e2d4ff]">
+    <div className="container border-2 w-full mx-auto rounded-[8px] p-6 mt-[20px]">
       
       {/* header */}
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
@@ -26,8 +26,8 @@ export default function ExperienceCard({
           />    
 
           <div>
-            <h2 className="text-lg font-bold tracking-wide">{title}</h2>
-            <p className="text-md mt-1">{role}</p>
+            <div className="text-lg font-bold tracking-wide">{title}</div>
+            <div className="text-md mt-1">{role}</div>
           </div>
         </div>
 

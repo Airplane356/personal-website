@@ -46,7 +46,7 @@ a {
   color: #CBA6F7;
 }
 
-.dark li {
+.dark .body-text li {
   color: #CBA6F7;
 }
 
@@ -97,7 +97,7 @@ p {
   color: #7f849c;  /* mocha overlay1 */
 }
 
-li {
+.body-text li {
   color: #7f849c;  /* mocha overlay1 */
 }
 

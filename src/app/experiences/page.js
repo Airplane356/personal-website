@@ -6,7 +6,7 @@ import ExperienceCard from "@/components/Experience";
 const experiences = [
   {
     logo: "/logos/yrpc.png",
-    title: "York Region Presidents’ Council",
+    title: "York Region Presidents' Council",
     role: "Prime Minister",
     dates: "May 2024 - Present",
     bullets: [

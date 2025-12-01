@@ -3,7 +3,7 @@ import { FaGithub, FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 export default function ProjectsCard({title, desc, img, skills = [], external, github}) { 
     return(
-        <div className="border-2 container rounded-[8px] w-full h-[500px] overflow-clip">
+        <div className="border-2 container rounded-[8px] w-full h-[500px] overflow-clip ">
             
             <img
                 className="h-[200px] w-full object-cover rounded-t-[6px] "

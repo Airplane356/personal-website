@@ -66,7 +66,7 @@ export default function Home() {
 
         </div>
 
-        <div className="col-span-7">
+        <div className="col-span-7 body-text">
           <h1 className='font-bold text-3xl'>Eric Chen</h1>
           <p className='mt-2'>IBDP @ Milliken Mills HS</p>
           <p className='mt-4'>hey 👋 my name is eric</p>
