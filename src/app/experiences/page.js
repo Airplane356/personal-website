@@ -92,7 +92,6 @@ export default function Experiences() {
       />
 
       <hr className="mt-8"></hr>
-
     </div>
   );
 }

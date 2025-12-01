@@ -1,6 +1,6 @@
 import { Instrument_Sans } from 'next/font/google';
 import Image from 'next/image';
-import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import SkillsTag from '@/components/SkillsTag';
 
@@ -20,7 +20,7 @@ export default function Home() {
             className="rounded-lg shadow-lg"
           />
           
-          <div className='flex justify-between mt-5'>
+          <div className='flex gap-3 mt-5'>
             <a  
                 href="https://github.com/Airplane356"
                 target="_blank"
