@@ -5,7 +5,7 @@ import ExperienceCard from "@/components/Experience";
 
 const experiences = [
   {
-    logo: "/logos/yrpc.png",
+    logo: "/logos/yrpc.webp",
     title: "York Region Presidents' Council",
     role: "Prime Minister",
     dates: "May 2024 - Present",
@@ -15,7 +15,7 @@ const experiences = [
     ],
   },
   {
-    logo: "/logos/SAC.png",
+    logo: "/logos/SAC.webp",
     title: "Student Council",
     role: "Technology Chair",
     dates: "May 2024 - Present",
@@ -23,7 +23,7 @@ const experiences = [
     padding: "p-2",
   },
   {
-    logo: "/logos/TMAS.jpg",
+    logo: "/logos/TMAS.webp",
     title: "The Math and Science Academy",
     role: "Software Engineer",
     dates: "July 2025 - August 2025",
@@ -48,7 +48,7 @@ const experiences = [
     padding: "p-1",
   },
   {
-    logo: "/logos/LaunchUp.png",
+    logo: "/logos/LaunchUp.webp",
     title: "LaunchUp!",
     role: "Co-Founder",
     dates: "July 2025 - Present",
@@ -63,7 +63,7 @@ const experiences = [
     padding: "p-1",
   },
   {
-    logo: "/logos/Zurich.png",
+    logo: "/logos/Zurich.webp",
     title: "Zurich Insurance",
     role: "Claims Intern",
     dates: "July 2024 - August 2024",
