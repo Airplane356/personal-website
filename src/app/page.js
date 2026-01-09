@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="col-span-5">
           <Image
-            src="/placeholder.png"
+            src="/headshot.jpg"
             alt="Placeholder"
             width={400}
             height={400}
@@ -43,7 +43,7 @@ export default function Home() {
             </a>
 
             <a
-              href=''
+              href='https://www.linkedin.com/in/eric356/'
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -53,7 +53,7 @@ export default function Home() {
             </a>
 
             <a
-              href=''
+              href='https://x.com/ericzxchen'
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -63,7 +63,7 @@ export default function Home() {
             </a>
 
             <a
-              href=''
+              href='mailto:ericchen3566@gmail.com'
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
