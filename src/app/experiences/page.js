@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import ExperienceCard from "@/components/Experience";
+import AwardsBox from "@/components/Awards";
 
 const experiences = [
   {
@@ -91,6 +92,14 @@ export default function Experiences() {
       ))}
 
       <hr className="mt-8" />
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: experiences.length * 0.15, ease: "easeOut" }}
+      >
+        <AwardsBox />
+      </motion.div>
+
     </div>
   );
 }
