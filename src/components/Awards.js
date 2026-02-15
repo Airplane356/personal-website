@@ -6,42 +6,47 @@ const awards = [
     {
         name: "1st Place",
         institution: "YRHacks",
-        description: "Built and pitched Safeguard, a web extension for scoring site credibility; won best overall for impact + execution.",
+        description: "Built and pitched Safeguard, a web extension for scoring site credibility; won best overall for impact + execution 🛡️",
     },
     {
         name: "Honourable Mention",
         institution: "Canadian Astronomy and Astrophysics Olympiad",
-        description: "Invited to the Team Canada selection camp for International Olympiad on Astronomy and Astrophysics."
+        description: "Invited to the Team Canada selection camp for the International Olympiad on Astronomy and Astrophysics 🔭"
     },
     {
         name: "10th Place",
         institution: "Ontario Association of Physics Teachers (OAPT) Physics Contest",
-        description: "Placed 10th in the grade 12 division as a grade 11 student."
+        description: "Placed 10th in the grade 12 division as a grade 11 student out of 200+ competitors ⚛️"
     },
     {
         name: "2x Rising All-Star, 1x Rookie All-Star",
         institution: "FIRST Robotics Canada",
-        description: "Won team awards for technical skill, resiliance, and team impact."
+        description: "Won team awards for technical skill, resiliance, and team impact ⚙️"
+    },
+     {
+        name: "Provincial Champion",
+        institution: "Ontario DECA",
+        description: "Qualified for the 2026 International Career Development Conference (ICDC) in Atlanta for inspiring the next generation of youth entrepreneurs in Project Management Career Development 🚀"
     },
      {
         name: "International Qualifer, 2x Regional Champions",
         institution: "Ontario DECA",
-        description: "Qualified for the International Career Development Conference (ICDC) in Entrepreneurship Team Decision Making (ETDM). Won 2x regionals in ETDM and Sports and Entertainment Team Decision Making (STDM)."
+        description: "Qualified for the 2025 ICDC in Entrepreneurship Team Decision Making (ETDM); Won 2x regionals in ETDM and Sports and Entertainment Team Decision Making (STDM) 📈"
     },
     {
         name: "Distinction",
         institution: "Sir Isaac Newton Physics Contest - University of Waterloo",
-        description: "Certificate of Distinction"
+        description: "Certificate of Distinction 🔬"
     },
     {
         name: "Distinction - Various",
         institution: "CEMC - University of Waterloo",
-        description: "Canadian Senior Mathematics Contest 2x, Hypatia, Fermat, Pascal Contests"
+        description: "Canadian Senior Mathematics Contest 2x, Hypatia, Fermat, Pascal Contests 🧮"
     },
     {
         name: "1st Place",
         institution: "UofGuelph Lang Business Case Study Competition",
-        description: "Presented a team solution and won prizes💰"
+        description: "Presented a team solution in the junior division and won $750+ in prizes 💰"
     },
 
 ];

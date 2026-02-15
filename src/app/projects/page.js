@@ -51,7 +51,7 @@ const projects = [
 export default function Projects() {
     return(
 
-    <div className="mx-auto max-w-[800px] px-4 grid lg:grid-cols-2 md:grid-cols-1 gap-6 mt-4 ">
+    <div className="mx-auto max-w-[800px] px-4 pb-10 grid lg:grid-cols-2 md:grid-cols-1 gap-6 mt-4 ">
       {projects.map((p, i) => (
         <motion.div
           key={i}

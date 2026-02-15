@@ -16,6 +16,14 @@ const experiences = [
     ],
   },
   {
+    logo: "/logos/robotics.webp",
+    title: "FRC 9569 Silver Knight Robotics",
+    role: "Mechanical/Design Lead, Business Lead",
+    dates: "September 2022 - Present",
+    bullets: ["Built robots, led community outreach, raised funds"],
+    padding: "p-1",
+  },
+  {
     logo: "/logos/SAC.webp",
     title: "Student Council",
     role: "Technology Chair",
@@ -31,32 +39,28 @@ const experiences = [
     bullets: ["Revamped tmasacademy.com"],
   },
   {
+    logo: "/logos/LaunchUp.webp",
+    title: "LaunchUp!",
+    role: "Co-Founder",
+    dates: "July 2025 - Present",
+    bullets: [
+      "Inspiring the next generation of youth entrepreneurs",
+      "Reached 42,000+ across social media, engaging 450+ students across initiatives"
+    
+    ],
+  },
+  {
     logo: "/logos/MBO.webp",
     title: "Milliken's Business Orgranization",
     role: "Entrepreneurship Trainer",
     dates: "May 2024 - Present",
     bullets: [
-      "trained 15 students in entrepreneurship events, increasing prov qual rates from 15% to 80%",
+      "Trained 15 students in entrepreneurship events, increasing prov qual rates from 15% to 80% across two years",
     ],
     padding: "p-1",
   },
   {
-    logo: "/logos/robotics.webp",
-    title: "FRC 9569 Silver Knight Robotics",
-    role: "Business Lead, Design/Build Lead, Prog.",
-    dates: "September 2022 - Present",
-    bullets: ["built robots"],
-    padding: "p-1",
-  },
-  {
-    logo: "/logos/LaunchUp.webp",
-    title: "LaunchUp!",
-    role: "Co-Founder",
-    dates: "July 2025 - Present",
-    bullets: ["inspiring the next generation of entrepreneurs"],
-  },
-  {
-    logo: "/logos/robotics.webp",
+    logo: "/logos/YSS.png",
     title: "Knightrogen Science Club",
     role: "Physics, Secretary/Externals",
     dates: "November 2022 - Present",
@@ -68,14 +72,14 @@ const experiences = [
     title: "Zurich Insurance",
     role: "Claims Intern",
     dates: "July 2024 - August 2024",
-    bullets: ["claims & legal department", "youngest intern"],
+    bullets: ["Claims & legal department", "Youngest intern"],
     padding: "p-1",
   },
 ];
 
 export default function Experiences() {
   return (
-    <div className="mx-auto px-4 max-w-[800px] mt-[40px] space-y-6">
+    <div className="mx-auto px-4 pb-10 max-w-[800px] mt-[40px] space-y-6">
       {experiences.map((exp, i) => (
         <motion.div
           key={exp.title}

@@ -83,7 +83,7 @@ export default function Home() {
           <p className='mt-4'>hey 👋 my name is eric</p>
           <ul>
             <li className='list-disc ml-8'>Interested in building cool things with real-world impact 🚀</li>
-            <li className='list-disc ml-8'>Intersted in physics, human-computer interaction, and imbedded systems 🤖</li>
+            <li className='list-disc ml-8'>Intersted in human-computer interaction, imbedded systems, and physics 🤖</li>
             <li className='list-disc ml-8'>Community leader 🌍</li>
           </ul>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
       </motion.section>
 
       
-      <motion.section
+      {/* <motion.section
         className=""
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -135,7 +135,7 @@ export default function Home() {
 
         </p>
 
-      </motion.section>  
+      </motion.section>  */}
 
 
 
