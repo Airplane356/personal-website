@@ -14,13 +14,6 @@ const projects = [
     external: "https://www.millikensac.com/"
   },
   {
-    title: "TMAS Website",
-    desc: "Revamped and optimized The Math and Science Academy's website.",
-    img: "/projects/TMASwebsite.webp",
-    skills: ["React.js", "Next.js", "TypeScript", "SEO", "TailwindCSS"],
-    external: "https://www.tmasacademy.com//"
-  },
-  {
     title: "Smooth Particle Hydrodyamics Simulation",
     desc: "Built alongside PhD canditates at the University of Toronto.",
     img: "/projects/SPH.webp",
@@ -28,16 +21,23 @@ const projects = [
     github: "https://github.com/Airplane356/SPH-Simulation",
   },
   {
+    title: "Anthropomorphic Testing Device",
+    desc: "A low-cost ATD developed to simulate the biomechanics of a 7-11 year old child in slow-speed car crashes.",
+    img: "/projects/Engineering.webp",
+    skills: ["CAD", "C++", "OnShape"],
+  },
+  {
+    title: "TMAS Website",
+    desc: "Revamped and optimized The Math and Science Academy's website.",
+    img: "/projects/TMASwebsite.webp",
+    skills: ["React.js", "Next.js", "TypeScript", "SEO", "TailwindCSS"],
+    external: "https://www.tmasacademy.com//"
+  },
+  {
     title: "SafeGuard",
     desc: "Chrome extension that tests the reliability of a site. 1st place submission at YRHacks",
     img: "/projects/SafeGuard.webp",
     skills: ["Chrome Extension", "JavaScript"],
-  },
-  {
-    title: "Anthropomorphic Testing Device",
-    desc: "A low-cost ATD developed to simulate the biomechanics of a 7-11 year old child in slow-speed car crashes.",
-    img: "/projects/Engineering.webp",
-    skills: ["CAD", "JavaScript", "OnShape"],
   },
   {
     title: "Maze Generation",

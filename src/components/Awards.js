@@ -34,6 +34,11 @@ const awards = [
         description: "Qualified for the 2025 ICDC in Entrepreneurship Team Decision Making (ETDM); Won 2x regionals in ETDM and Sports and Entertainment Team Decision Making (STDM) 📈"
     },
     {
+        name: "Finalist",
+        institution: "Harvard Undergraduate Capital Partners Investment Pitch Competition",
+        description: "Top 10 finalists out of 130+ teams 💸"
+    },
+    {
         name: "Distinction",
         institution: "Sir Isaac Newton Physics Contest - University of Waterloo",
         description: "Certificate of Distinction 🔬"
