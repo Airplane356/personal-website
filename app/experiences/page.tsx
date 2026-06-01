@@ -18,6 +18,15 @@ const experiences = [
     category: "work" as const,
   },
   {
+    id: "droneresearch",
+    position: "Researcher",
+    date: "May 2026 - Present",
+    description: "Writing a paper on autonomous UAVs for urban traffic systems with the University of Toronto Institute for Aerospace Studies. More to come :)",
+    image: "/images/uoft.webp",
+    link: "https://devpost.com/software/ecrivon",
+    category: "work" as const,
+  },
+  {
     id: "tmas-swe",
     position: "Software Engineer",
     company: "TMAS Academy",
@@ -37,6 +46,7 @@ const experiences = [
     link: "https://www.zurich.com/",
     category: "work" as const,
   },
+
   {
     id: "ecrivons",
     position: "Écrivons",
