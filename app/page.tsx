@@ -7,7 +7,7 @@ export default function AboutPage() {
       <p className="text-foreground/80 mb-4 ">
         {"i study computer science at "}
         <HighlightLink
-          text="the university of waterloo."
+          text="the University of Waterloo."
           href="https://uwaterloo.ca"
           color="yellow"
           icon="https://uwaterloo.ca/favicon.ico"
@@ -38,7 +38,7 @@ export default function AboutPage() {
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
-              {"autonomous drone research @ "}
+              {"drone research @ "}
               <HighlightLink
                 text="the University of Toronto's"
                 href="https://flight.utias.utoronto.ca/"
@@ -72,7 +72,7 @@ export default function AboutPage() {
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
-              {"youngest intern in history (16) @ "}
+              {"youngest claims intern (16) @ "}
               <HighlightLink
                 text="Zurich Insurance"
                 href="https://www.zurich.com/"
@@ -85,7 +85,7 @@ export default function AboutPage() {
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
-              {"buit an "}
+              {"built an "}
               <HighlightLink
                 text="educational platform"
                 href="https://www.youtube.com/channel/UC-Nt9Uo03VSo2QTNIzsE_cA"
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
-              {"won 3rd @ the world's largest business competition "}
+              {"won 3rd @ the world's largest international business competition "}
               <HighlightLink
                 text="(DECA!)"
                 href="https://deca.org"
@@ -127,8 +127,7 @@ export default function AboutPage() {
               {"led my school board's "}
               <HighlightLink
                 text="official student senate"
-                href="https://www2.yrdsb.ca
-                -us/board-trustees/student-trustees/york-region-presidents-council-yrpc"
+                href="https://www2.yrdsb.ca/about-us/board-trustees/student-trustees/york-region-presidents-council-yrpc"
                 color="green"
                 icon="https://www2.yrdsb.ca/sites/default/files/2022-12/YRPC-Crest_0.png"
                 iconClassName="scale-150"
@@ -150,21 +149,22 @@ export default function AboutPage() {
               {"solved a rubik's cube in 4.60 seconds!"}
             </span>
           </li>
-        </ul>
 
          {/* PREVIOUSLY */}
           <p className="font-medium text-foreground mb-2 mt-4">
             {"what i'm looking to do:"}
           </p>
-
-          <ul>
             <li className="flex items-baseline gap-2">
               <span className="text-foreground/40">•</span>
               <span>
                 {"get into rock climbing, research, & building the next big thing."}
               </span>
             </li>
-          </ul>
+
+          <p className="font-medium text-foreground mb-2 mt-4">
+            {"outside of my work, i enjoy speedcubing, taking walks, trying new food, and exploring new cities!"}
+          </p>
+        </ul>
       </div>
     </div>
   )

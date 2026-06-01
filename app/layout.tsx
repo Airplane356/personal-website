@@ -4,8 +4,18 @@ import { Header } from '@/components/header'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ericzxchen.com'),
   title: 'Eric Chen',
-  description: 'Personal Website',
+  description: 'Personal Website and Portfolio of Eric Chen.',
+  openGraph: {
+    title: 'Eric Chen',
+    description: 'Personal Website and Portfolio of Eric Chen.',
+    url: 'https://ericzxchen.com',
+    siteName: 'Eric Chen',
+    locale: 'en_US',
+    type: 'website',
+    images: ['/icons.png']
+  },
 }
 
 export default function RootLayout({
