@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import { ProjectCard } from "@/components/project-card"
-import { compareAsc } from "date-fns"
-import { link } from "fs"
+import { motion, Variants } from "framer-motion"
 
 type FilterType = "work" | "projects" | "community"
 
@@ -38,7 +37,6 @@ const experiences = [
     link: "https://www.zurich.com/",
     category: "work" as const,
   },
-
   {
     id: "ecrivons",
     position: "Écrivons",
@@ -82,7 +80,6 @@ const experiences = [
     image: "/images/SafeGuard.webp",
     category: "projects" as const,
   },
-
   {
     id: "hackcanada",
     position: "Organizer",
@@ -145,6 +142,29 @@ const experiences = [
   },
 ]
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 15 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      type: "spring",
+      stiffness: 100, 
+      damping: 15 
+    } 
+  },
+}
+
 export default function ExperiencesPage() {
   const [filter, setFilter] = useState<FilterType>("work")
 
@@ -179,20 +199,27 @@ export default function ExperiencesPage() {
         ))}
       </div>
 
-      {/* Project Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Animated Project Cards Grid */}
+      <motion.div 
+        key={filter} 
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
         {filteredExperiences.map((exp) => (
-          <ProjectCard
-            key={exp.id}
-            position={exp.position}
-            company={exp.company}
-            date={exp.date}
-            description={exp.description}
-            image={exp.image}
-            link={exp.link}
-          />
+          <motion.div key={exp.id} variants={itemVariants}>
+            <ProjectCard
+              position={exp.position}
+              company={exp.company}
+              date={exp.date}
+              description={exp.description}
+              image={exp.image}
+              link={exp.link}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }
