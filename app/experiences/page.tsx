@@ -23,7 +23,7 @@ const experiences = [
     date: "May 2026 - Present",
     description: "Writing a paper on autonomous UAVs for urban traffic systems with the University of Toronto Institute for Aerospace Studies. More to come :)",
     image: "/images/uoft.webp",
-    link: "https://devpost.com/software/ecrivon",
+    link: "https://flight.utias.utoronto.ca/",
     category: "work" as const,
   },
   {
@@ -40,7 +40,7 @@ const experiences = [
     id: "zurich",
     position: "Claims Insurance",
     company: "Zurich Insurance",
-    date: "July 2025 - Aug 2025",
+    date: "July 2024 - Aug 2024",
     description: "Worked across the claims and legal team. First ever job, introduced me to corporate.",
     image: "/images/zurich.webp",
     link: "https://www.zurich.com/",
