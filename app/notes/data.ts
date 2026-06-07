@@ -1,0 +1,25 @@
+export const notes = [
+  {
+    slug: "highschool",
+    category: "June 6, 2026",
+    title: "some learnings from high school",
+    bullets: [
+      "be delusional. ambitious goals act as a north star and with enough effort, persistence, and some luck, reality has a way of catching up.", 
+      "serendipitymaxx. be as outgoing as possible. meet people, go to events, say yes to things, send that dm, and give luck more chances to find you. even if it means being uncomfortable.",
+      "seek opportunities outside of school. meet the most ambitious and cracked students from across the city, province, country, and beyond.",
+      "your grade 10 english mark doesn't matter. nor do any of your french marks across all four years :)",
+      "focus on building relationships. you'll remember the people and moments more than anything.",
+      "work hard, play hard. go to that post-exam brunch or mid-lunch costco run with your friends.",
+      "make yourself known by others.",
+      "never stop being high agency. don't let opportunities slip away — or better yet, create your own.", 
+      "take more photos. be in more photos. document every memory.",
+      "do dumb things and experience the world. just not illegally dumb.",
+      "find what excites you and chase it. don't waste time and energy on ten different school clubs and non-profits that you don't resonate with. focus on building, researching, and competing. whatever excites you. remember, quality > quanitity.",
+      "being humble is one of the most respectable traits. be open-minded and willing to learn from others.",
+      "emails are powerful. send those cold emails early. people are more willing to help ambitious young people than you think.",
+      "don't gatekeep. ngmi behaviour.",
+      "be kind to people. your reputation tends to stick. (even teachers gossip about you).",
+      "if your work or social circle drains you, leave.",
+    ],
+  },
+]
