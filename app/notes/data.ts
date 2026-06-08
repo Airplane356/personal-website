@@ -16,6 +16,7 @@ export const notes = [
       "do dumb things and experience the world. just not illegally dumb.",
       "find what excites you and chase it. don't waste time and energy on ten different school clubs and non-profits that you don't resonate with. focus on building, researching, and competing. whatever excites you. remember, quality > quanitity.",
       "being humble is one of the most respectable traits. be open-minded and willing to learn from others.",
+      "get your driver's license as early as possible.", 
       "emails are powerful. send those cold emails early. people are more willing to help ambitious young people than you think.",
       "don't gatekeep. ngmi behaviour.",
       "be kind to people. your reputation tends to stick. (even teachers gossip about you).",
