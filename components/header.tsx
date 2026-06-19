@@ -44,7 +44,7 @@ export function Header() {
             linkedin
           </a>
           <a
-            href="https://github.com/Airplane356"
+            href="https://github.com/EricChen356"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-foreground/70 hover:text-foreground transition-colors underline underline-offset-4"

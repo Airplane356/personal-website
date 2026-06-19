@@ -48,6 +48,15 @@ const experiences = [
   },
 
   {
+    id: "nomad",
+    position: "Nomad",
+    date: "June 2026",
+    description: "Passports for AI agents to prevent fraudulent activity. Won best use of Solana @ JamHacks10, Canada's biggest high school hackathon.",
+    image: "/images/nomad.webp",
+    link: "https://x.com/ericzxchen/status/2066627155706933311",
+    category: "projects" as const,
+  },
+  {
     id: "ecrivons",
     position: "Écrivons",
     date: "March 2026",
@@ -62,7 +71,7 @@ const experiences = [
     date: "March 2025",
     description: "Simulated particles using Smoothed Particle Hydrodynamics. Built alongside PhD canditates at the University of Toronto.",
     image: "/images/SPH.webp",
-    link: "https://github.com/Airplane356/SPH-Simulation",
+    link: "https://github.com/EricChen356/SPH-Simulation",
     category: "projects" as const,
   },
   {
@@ -190,7 +199,7 @@ export default function ExperiencesPage() {
 
   return (
     <div className="py-4">
-      <h2 className="text-xl font-bold mb-6">experiences</h2>
+      <h2 className="text-xl font-bold mb-6">experience</h2>
 
       {/* Filter Tabs */}
       <div className="flex gap-1 mb-8 p-1 bg-muted/50 w-fit">
