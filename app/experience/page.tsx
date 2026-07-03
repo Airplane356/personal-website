@@ -2,47 +2,64 @@
 
 import { useState } from "react"
 import { ProjectCard } from "@/components/project-card"
+import { WorkListItem } from "@/components/work-list-item"
 import { motion, Variants } from "framer-motion"
 
 type FilterType = "work" | "projects" | "community"
 
 const experiences = [
   {
-    id: "magic-hour-swe",
-    position: "Software Engineer",
-    company: "Magic Hour (YC W24)",
-    date: "May 2026 - Present",
-    description: "Building AI video and image tools to push the boundaries of video editing.",
-    image: "/images/magichour.webp",
+    id: "lunon-swe",
+    position: "Software Engineer Intern",
+    company: "Lunon",
+    date: "July 2026 - Present",
+    description: "Revolutionizing consulting.",
+    image: "",
+    icon: "/images/lunon.png",
     link: "https://magichour.ai/",
     category: "work" as const,
   },
   {
     id: "droneresearch",
-    position: "Researcher",
+    position: "Research Intern",
+    company: "University of Toronto",
     date: "May 2026 - Present",
-    description: "Writing a paper on autonomous UAVs for urban traffic systems with the University of Toronto Institute for Aerospace Studies. More to come :)",
-    image: "/images/uoft.webp",
+    description: "With the University of Toronto Institute for Aerospace Studies.",
+    image: "",
+    icon: "https://www.utoronto.ca/favicon.ico",
     link: "https://flight.utias.utoronto.ca/",
     category: "work" as const,
   },
   {
+    id: "magic-hour-swe",
+    position: "Software Engineer Intern",
+    company: "Magic Hour (YC W24)",
+    date: "May 2026 - June 2026",
+    description: "Building AI video editing tools to push the boundaries of video editing.",
+    image: "",
+    icon: "https://magichour.ai/favicon.ico",
+    link: "https://magichour.ai/",
+    category: "work" as const,
+  },
+  {
     id: "tmas-swe",
-    position: "Software Engineer",
+    position: "Software Engineer Intern",
     company: "TMAS Academy",
     date: "July 2025 - Aug 2025",
     description: "Revamped TMAS website and built tools used by 10k+ students.",
     image: "/images/TMASwebsite.webp",
+    icon: "/images/tmas.jpg",
     link: "https://www.youtube.com/channel/UC-Nt9Uo03VSo2QTNIzsE_cA/videos",
     category: "work" as const,
   },
   {
     id: "zurich",
-    position: "Claims Insurance",
+    position: "Claims Intern",
     company: "Zurich Insurance",
     date: "July 2024 - Aug 2024",
     description: "Worked across the claims and legal team. First ever job, introduced me to corporate.",
     image: "/images/zurich.webp",
+    icon: "https://www.zurichcanada.com/favicon.ico",
     link: "https://www.zurich.com/",
     category: "work" as const,
   },
@@ -135,7 +152,7 @@ const experiences = [
     company: "Milliken DECA Chapter",
     date: "High School",
     description: "Trained 15+ students in entrepreneurship, winning regionals, provincials, and qualifying for internationals.",
-    image: "/images/deca.webp",
+    image: "/images/deca.jpg",
     link: "https://www.deca.org/",
     category: "community" as const,
   },
@@ -218,27 +235,51 @@ export default function ExperiencesPage() {
         ))}
       </div>
 
-      {/* Animated Project Cards Grid */}
-      <motion.div 
-        key={filter} 
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="grid grid-cols-1 md:grid-cols-2 gap-8"
-      >
-        {filteredExperiences.map((exp) => (
-          <motion.div key={exp.id} variants={itemVariants}>
-            <ProjectCard
-              position={exp.position}
-              company={exp.company}
-              date={exp.date}
-              description={exp.description}
-              image={exp.image}
-              link={exp.link}
-            />
-          </motion.div>
-        ))}
-      </motion.div>
+      {filter === "work" ? (
+        /* Work: list-style layout */
+        <motion.div
+          key={filter}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col"
+        >
+          {filteredExperiences.map((exp) => (
+            <motion.div key={exp.id} variants={itemVariants}>
+              <WorkListItem
+                position={exp.position}
+                company={exp.company}
+                date={exp.date}
+                description={exp.description}
+                icon={exp.icon}
+                link={exp.link}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+      ) : (
+        /* Projects & Community: two-column card grid */
+        <motion.div
+          key={filter}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
+          {filteredExperiences.map((exp) => (
+            <motion.div key={exp.id} variants={itemVariants}>
+              <ProjectCard
+                position={exp.position}
+                company={exp.company}
+                date={exp.date}
+                description={exp.description}
+                image={exp.image}
+                link={exp.link}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
     </div>
   )
 }

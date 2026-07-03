@@ -28,14 +28,14 @@ export function HighlightLink({
   iconClassName = "",
 }: HighlightLinkProps) {
   const content = (
-    <span className={`${colorClasses[color]} px-1.5 py-0.5 inline-flex items-center gap-1.5 align-middle`}>
+    <span className={`${colorClasses[color]} px-1.5 py-0.5 whitespace-nowrap`}>
       {icon && (
         <Image
           src={icon}
           alt=""
           width={16}
           height={16}
-          className={`w-4 h-4 object-contain ${iconClassName}`}
+          className={`inline-block w-4 h-4 object-contain align-[-0.15em] mr-1.5 ${iconClassName}`}
         />
       )}
       {text}

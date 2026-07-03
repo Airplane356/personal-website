@@ -21,17 +21,17 @@ export default function AboutPage() {
         </p>
 
         <ul className="space-y-2 text-foreground/80">
+
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
               {"software engineering @ "}
               <HighlightLink
-                text="Magic Hour"
+                text="Lunon"
                 href="https://magichour.ai"
-                color="purple"
-                icon="https://magichour.ai/favicon.ico"
+                color="blue"
+                icon="/images/lunon.png"
               />
-              {" (YC W24)"}
             </span>
           </li>
 
@@ -68,6 +68,20 @@ export default function AboutPage() {
           <p className="font-medium text-foreground mb-2 mt-4">
             {"what i've done:"}
           </p>
+
+          <li className="flex items-baseline gap-2 my-1">
+            <span className="text-foreground/40">•</span>
+            <span>
+              {"software engineering @ "}
+              <HighlightLink
+                text="Magic Hour"
+                href="https://magichour.ai"
+                color="purple"
+                icon="https://magichour.ai/favicon.ico"
+              />
+              {" (YC W24)"}
+            </span>
+          </li>
 
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
