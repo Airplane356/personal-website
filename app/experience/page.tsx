@@ -16,7 +16,7 @@ const experiences = [
     description: "Revolutionizing consulting.",
     image: "",
     icon: "/images/lunon.png",
-    link: "https://magichour.ai/",
+    link: "https://lunon.ai/",
     category: "work" as const,
   },
   {

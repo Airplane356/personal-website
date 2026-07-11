@@ -28,7 +28,7 @@ export default function AboutPage() {
               {"software engineering @ "}
               <HighlightLink
                 text="Lunon"
-                href="https://magichour.ai"
+                href="https://lunon.ai/"
                 color="blue"
                 icon="/images/lunon.png"
               />
@@ -99,19 +99,6 @@ export default function AboutPage() {
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
-              {"built an "}
-              <HighlightLink
-                text="educational platform"
-                href="https://www.youtube.com/channel/UC-Nt9Uo03VSo2QTNIzsE_cA"
-                color="pink"
-              />
-              {" for 10k+ students"}
-            </span>
-          </li>
-
-          <li className="flex items-baseline gap-2 my-1">
-            <span className="text-foreground/40">•</span>
-            <span>
               {"won 3rd @ the world's largest international business competition "}
               <HighlightLink
                 text="(DECA!)"
@@ -175,7 +162,7 @@ export default function AboutPage() {
               </span>
             </li>
 
-          <p className="font-medium text-foreground mb-2 mt-4">
+          <p className="font-medium text-foreground mt-4">
             {"outside of my work, i enjoy speedcubing, taking walks, trying new food, and exploring new cities!"}
           </p>
         </ul>
