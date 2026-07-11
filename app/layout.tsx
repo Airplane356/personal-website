@@ -30,11 +30,39 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
         </div>
-        <footer className="w-full py-8 mt-auto">
-          <div className="max-w-3xl mx-auto px-4">
+        <footer className="w-full pt-4 pb-8 mt-auto">
+          <div className="max-w-3xl mx-auto px-4 flex items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">
               &copy; ericzxchen.com 2026
             </p>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <a
+                href="https://cs.uwatering.com/#https://ericzxchen.com?nav=prev"
+                className="hover:text-foreground transition-colors"
+                aria-label="Previous site in the CS webring"
+              >
+                ←
+              </a>
+              <a
+                href="https://cs.uwatering.com/#https://ericzxchen.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CS Webring"
+              >
+                <img
+                  src="https://cs.uwatering.com/icon.black.svg"
+                  alt="CS Webring"
+                  className="w-6 h-auto opacity-80 dark:invert"
+                />
+              </a>
+              <a
+                href="https://cs.uwatering.com/#https://ericzxchen.com?nav=next"
+                className="hover:text-foreground transition-colors"
+                aria-label="Next site in the CS webring"
+              >
+                →
+              </a>
+            </div>
           </div>
         </footer>
         {process.env.NODE_ENV === 'production' && <Analytics />}
