@@ -25,19 +25,6 @@ export default function AboutPage() {
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>
             <span>
-              {"software engineering @ "}
-              <HighlightLink
-                text="Lunon"
-                href="https://lunon.ai/"
-                color="blue"
-                icon="/images/lunon.png"
-              />
-            </span>
-          </li>
-
-          <li className="flex items-baseline gap-2 my-1">
-            <span className="text-foreground/40">•</span>
-            <span>
               {"drone research @ "}
               <HighlightLink
                 text="the University of Toronto's"
@@ -68,6 +55,19 @@ export default function AboutPage() {
           <p className="font-medium text-foreground mb-2 mt-4">
             {"what i've done:"}
           </p>
+
+          <li className="flex items-baseline gap-2 my-1">
+            <span className="text-foreground/40">•</span>
+            <span>
+              {"software engineering @ "}
+              <HighlightLink
+                text="Lunon"
+                href="https://lunon.ai/"
+                color="blue"
+                icon="/images/lunon.png"
+              />
+            </span>
+          </li>
 
           <li className="flex items-baseline gap-2 my-1">
             <span className="text-foreground/40">•</span>

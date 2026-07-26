@@ -9,17 +9,6 @@ type FilterType = "work" | "projects" | "community"
 
 const experiences = [
   {
-    id: "lunon-swe",
-    position: "Software Engineer Intern",
-    company: "Lunon",
-    date: "July 2026 - Present",
-    description: "Revolutionizing consulting.",
-    image: "",
-    icon: "/images/lunon.png",
-    link: "https://lunon.ai/",
-    category: "work" as const,
-  },
-  {
     id: "droneresearch",
     position: "Research Intern",
     company: "University of Toronto",
@@ -28,6 +17,17 @@ const experiences = [
     image: "",
     icon: "https://www.utoronto.ca/favicon.ico",
     link: "https://flight.utias.utoronto.ca/",
+    category: "work" as const,
+  },
+  {
+    id: "lunon-swe",
+    position: "Software Engineer Intern",
+    company: "Lunon",
+    date: "July 2026 - July 2026",
+    description: "AI native consulting.",
+    image: "",
+    icon: "/images/lunon.png",
+    link: "https://lunon.ai/",
     category: "work" as const,
   },
   {
