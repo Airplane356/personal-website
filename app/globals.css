@@ -76,7 +76,7 @@
 
 @theme inline {
   --font-sans: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-mono: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,5 +123,58 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+/*
+ * Per-row hover atmosphere.
+ *
+ * Every row supplies its own graphic through --hov (and optionally --hov-pos /
+ * --hov-size), so adding a job means adding a data entry — never touching CSS.
+ * The art lives on a pseudo-element because background-image can't be
+ * transitioned; fading the element's opacity is what makes the reveal gradual.
+ */
+.row-art {
+  position: relative;
+  isolation: isolate;
+}
+
+.row-art::before {
+  content: "";
+  position: absolute;
+  inset: -0.25rem -0.75rem;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background-image: var(--hov);
+  background-position: var(--hov-pos, right bottom);
+  background-size: var(--hov-size, cover);
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.row-art:hover::before {
+  opacity: 0.25;
+}
+
+/* Keyboard focus gets a quieter, flat state rather than the full graphic. */
+.row-art:focus-visible {
+  outline: none;
+}
+
+.row-art:focus-within::before {
+  background-image: none;
+  background-color: var(--muted);
+  opacity: 1;
+}
+
+/* The art is built near-white, so it needs knocking back further on dark. */
+.dark .row-art:hover::before {
+  opacity: 0.14;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .row-art::before {
+    transition: none;
   }
 }
