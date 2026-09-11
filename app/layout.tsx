@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
+import { VisitCounter } from '@/components/visit-counter'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -35,33 +36,36 @@ export default function RootLayout({
             <p className="text-sm text-muted-foreground">
               &copy; ericzxchen.com 2026
             </p>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <a
-                href="https://cs.uwatering.com/#https://ericzxchen.com?nav=prev"
-                className="hover:text-foreground transition-colors"
-                aria-label="Previous site in the CS webring"
-              >
-                ←
-              </a>
-              <a
-                href="https://cs.uwatering.com/#https://ericzxchen.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="CS Webring"
-              >
-                <img
-                  src="https://cs.uwatering.com/icon.black.svg"
-                  alt="CS Webring"
-                  className="w-6 h-auto opacity-80 dark:invert"
-                />
-              </a>
-              <a
-                href="https://cs.uwatering.com/#https://ericzxchen.com?nav=next"
-                className="hover:text-foreground transition-colors"
-                aria-label="Next site in the CS webring"
-              >
-                →
-              </a>
+            <div className="flex items-center gap-4">
+              {process.env.NODE_ENV === 'production' && <VisitCounter />}
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <a
+                  href="https://cs.uwatering.com/#https://ericzxchen.com?nav=prev"
+                  className="hover:text-foreground transition-colors"
+                  aria-label="Previous site in the CS webring"
+                >
+                  ←
+                </a>
+                <a
+                  href="https://cs.uwatering.com/#https://ericzxchen.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="CS Webring"
+                >
+                  <img
+                    src="https://cs.uwatering.com/icon.black.svg"
+                    alt="CS Webring"
+                    className="w-6 h-auto opacity-80 dark:invert"
+                  />
+                </a>
+                <a
+                  href="https://cs.uwatering.com/#https://ericzxchen.com?nav=next"
+                  className="hover:text-foreground transition-colors"
+                  aria-label="Next site in the CS webring"
+                >
+                  →
+                </a>
+              </div>
             </div>
           </div>
         </footer>
